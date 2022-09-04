@@ -16,8 +16,8 @@
     <nav class="navigation">
       <a href="index.html" class="logo" ><span>Web</span>Studio</a>
       <ul class="site-nav">
-        <li> <a href="./index.html" class="site-nav-main">Студія</a></li>
-        <li> <a href="./portfolio.html" class="site-nav-portfolio">Портфоліо</a></li>
+        <li> <a href="./index.html" class="site-nav-main current">Студія</a></li>
+        <li> <a href="./portfolio.html">Портфоліо</a></li>
         <li> <a href="">Контакти</a></li>
       </ul>
     </nav>
@@ -36,7 +36,7 @@
     <section class="main-title">
       <div class="container title-main">
     <h1>Ефективні рішення для вашого бізнесу</h1>
-    <button type="button" class="order-button">Замовити послугу</button>
+    <button type="button" class="order-button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
   <section class="about-us">
@@ -344,6 +344,15 @@
     </div>
     </div>
   </footer>
-  <script src="./js/modal.js"></script>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg aria-label="Закрити вікно" class="modal-x" width="18" height="18">
+          <use href="./images/SVG/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+   </div>
+  </div>
+  <script src="./JS/modal.js"></script>
 </body>
 </html>
