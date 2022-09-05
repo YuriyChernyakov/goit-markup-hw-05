@@ -522,7 +522,7 @@ fill: var(--adress-color);}
 
 .our-projects li:hover .our-projects-about{transform: translateY(0%);}
 
-.backdrop {
+.backdrop{
     position: fixed;
     top: 0;
     left: 0;
