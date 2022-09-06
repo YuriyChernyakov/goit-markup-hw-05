@@ -236,12 +236,16 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
 
 .examples-title li{position: relative;}
 
+.examples-title p{
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
 .examples-description{position: absolute;
     bottom: 0;
     width: 100%;
+    height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
-    padding-top: 27px;
-    padding-bottom: 27px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -269,7 +273,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .employer-logo .social-list:hover,
@@ -342,7 +346,7 @@ ul,ol {margin-top: 0; margin-bottom: 0; padding-left: 0}
     border: 1px solid var(--clients-border);
     border-radius: 4px;
     fill: rgba(175, 177, 184, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-example a:hover,
@@ -506,7 +510,7 @@ fill: var(--adress-color);}
     left: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
@@ -520,7 +524,7 @@ fill: var(--adress-color);}
     padding-left: 24px;
     padding-right: 24px;}
 
-.our-projects li:hover .our-projects-about{transform: translateY(0%);}
+.our-projects a:hover .our-projects-about{transform: translateY(0%);}
 
 .backdrop{
     position: fixed;
